@@ -9,18 +9,19 @@ import utils.CommonMethods;
 import utils.ConfigReader;
 
 public class LoginSteps extends CommonMethods {
-    @Given("user navigates to HRMS application")
+   /* @Given("user navigates to HRMS application")
     public void user_navigates_to_hrms_application() {
-       openBrowserAndLaunchApplication();
-    }
+       openBrowserAndLaunchApp();
+    }*/
 
 
     @When("user enters valid username and valid password")
     public void user_enters_valid_username_and_valid_password() {
-        sendText(login.usernameTextField, ConfigReader.getPropertyValue("username"));
-
-        WebElement passwordField=driver.findElement(By.id("txtPassword"));
-        sendText(login.passwordTextField, ConfigReader.getPropertyValue("password"));
+       // sendText(login.usernameTextField, ConfigReader.getPropertyValue("username"));
+        sendText(login.usernameTextField,ConfigReader.getPropertyValue("username"));
+       // WebElement passwordField=driver.findElement(By.id("txtPassword"));
+        //sendText(login.passwordTextField, ConfigReader.getPropertyValue("password"));
+        sendText(login.passwordTextField,ConfigReader.getPropertyValue("password"));
     }
 
     @When("user clicks on login button")
@@ -33,4 +34,5 @@ public class LoginSteps extends CommonMethods {
         System.out.println("We logged in successfully");
 
 
-}}
+}
+}
