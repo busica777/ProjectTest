@@ -1,7 +1,7 @@
 package utils;
 
 
-import java.util.logging.Logger;
+import org.apache.log4j.*;
 
 public class Log    {
     //initialize log4j logs
