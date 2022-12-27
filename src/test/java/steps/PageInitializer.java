@@ -1,5 +1,7 @@
 package steps;
 
+import Pages.LoginPage;
+
 public class PageInitializer {
 
 public static LoginPage login;
