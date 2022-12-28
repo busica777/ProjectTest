@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="GroupProjectB14" />
         <module name="Group18Test" />
+        <module name="ProjectTest" />
       </profile>
     </annotationProcessing>
   </component>
